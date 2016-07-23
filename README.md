@@ -20,7 +20,7 @@
 
 ```python
 {
-   {"name": {"type": 0, 
+    "name": {"type": 0, 
              "title": "",
              "text": "",
              "icon": "images/icons/ach.png"
