@@ -101,8 +101,8 @@ init python:
                                         }
                                         
 
-    for i, a in persistent.achievements_dict.items():
-        if a['type'] == 0:
-            achievement.register(i, steam=a['title'])
-        if a['type'] == 1:
-            achievement.register(i, steam=a['title'], stat_max=a['max_prog'])
+        for i, a in persistent.achievements_dict.items():
+            if a['type'] == 0:
+                achievement.register(i, steam=a['title'])
+            if a['type'] == 1:
+                achievement.register(i, steam=a['title'], stat_max=a['max_prog'])
