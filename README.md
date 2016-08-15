@@ -1,5 +1,7 @@
 # Roselia-achievements
 
+![screenshot](https://github.com/OlegWock/Roselia-achievements/raw/master/screenshot.png)
+
 This is small module for RenPy, thats implent custom achievements. It's devloping as part of Project Roselia, that \[will\] contain other small scripts with different features for RenPy.
 
 It has:
