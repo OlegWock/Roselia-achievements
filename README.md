@@ -59,7 +59,9 @@ Threre
 **$ get_achievement(name, trans=achievement_transform)** — to award a one-time achievement
 
 **$ update_achievement(name, step=1, trans=achievement_transform)** — to update achievement with progress
+
 **step** — how much should be added, by default =1
+
 **trans** — animation for achievement
 
 After that you can use basic functionality.
