@@ -2,26 +2,26 @@
 
 ![screenshot](https://github.com/OlegWock/Roselia-achievements/raw/master/screenshot.png)
 
-This is small module for RenPy, thats implent custom achievements. It's devloping as part of Project Roselia, that \[will\] contain other small scripts with different features for RenPy.
+This is small module for RenPy, implenting custom achievements. It is being developed as a part of Project Roselia, that \[will\] contain other small scripts with different features for RenPy.
 
 It has:
 
 * One-time achievements
 * Achievements with progress
 * Steam compatibility (in future)
-* Ability to change achievements screen and animation
-* Simple architecture that allows you to add new features
-* Works over standart **achievement**
+* The ability to change the achievement -screen and -animation
+* A simple architecture, that allows you to add new features
+* Works over standard **achievement**
 
 ## How to use
 
 **Attention!!!**
 This module uses persistent data, so after any change you must clear persistent data.
 
-For integration in your project:
+To integrate in your project:
 
-* Copy **achievement.rpy** file in your project folder
-* In **achievement.rpy** file (at 90th line, after 'Define your achievements here' comment) add your achievements. There is two examples. Achievement has same structure as bellow:
+* Copy the **achievement.rpy** file in your project folder
+* In the **achievement.rpy** file (line 90; after 'Define your achievements here' comment) add your achievements. There are two examples. Achievements use the below structure:
 
 ```python
 # Define your achievements here
@@ -40,33 +40,43 @@ persistent.achievements_dict = {"name": {"type": 0,
                                 }
 ```
 
-Threre
+### Explanation:
 
-**name** — indentifer. User will not see it
+**name** — identifier, the user will not see this
 
-**type** — 0 or 1, 0 — one-time achievement, 1 — with progress
+**type** — 0 or 1, 0 — one-time achievement, 1 — achievement with progress
 
-**title** — title for notification
+**title** — notification title
  
-**text** — description for notification
+**text** — notification description
 
-**icon** — path to icon. I recomend make it 96х96 pixels
+**icon** — icon path, recommended: 96х96 pixels
 
-**cur_prog** — only if **type=1**. Current progress
+**cur_prog** — only used if **type=1**, current progress
 
-**max_prog** — only if **type=1**. Maximal progress
+**max_prog** — only used if **type=1**, maximal progress
 
-* Call one of this function:
+## Usage
+
+To implement, use one of these functions:
+
+**Get_achievement:**
 
 **$ get_achievement(name, trans=achievement_transform)** — to award a one-time achievement
 
-**$ update_achievement(name, step=1, trans=achievement_transform)** — to update achievement with progress
+**trans** — animation for the achievement
+
+**Update_achievemnt:**
+
+**$ update_achievement(name, step=1, trans=achievement_transform)** — to update an achievement with progress
 
 **step** — how much should be added, by default =1
 
-**trans** — animation for achievement
+**trans** — animation for the achievement
 
 After that you can use basic functionality.
+
+-------------------------------------------------------------------------------
 
 # In russian / на русском
 
